@@ -1,0 +1,100 @@
+.container {
+  display: block;
+  margin: 0 auto;
+  background: rgb(0, 96, 128);
+  width: 700px;
+  text-align: center;
+  height: 500px;
+}
+h1 {
+  color: white;
+  font-family: "Titillium Web", sans-serif;
+  margin: 20px 0 0 10px;
+  width: 100px;
+  height: 0px;
+
+  text-align: center;
+}
+.em1 {
+  font-size: 100px;
+  text-align: center;
+  margin: 0 auto;
+  padding: 0 auto;
+  width: 120px;
+  height: 138px;
+}
+h2 {
+  color: white;
+  font-family: "Titillium Web", sans-serif;
+
+  width: 150px;
+  padding-top: 5px;
+}
+.today li {
+  list-style: none;
+  color: white;
+  font-family: "Titillium Web", sans-serif;
+  text-align: right;
+  width: 150px;
+}
+div.col-3 {
+  padding: 0 70px 0 150px;
+}
+.row {
+  display: block;
+  margin: 0 auto;
+  align-items: center;
+}
+div.col-2 {
+  margin-top: 40px;
+}
+.rain {
+  padding-top: 74px;
+}
+li.list-group-item {
+  background: none;
+  padding: 0;
+  height: 150px;
+
+  text-align: center;
+  display: block;
+}
+li {
+  list-style: none;
+  color: black;
+  font-family: "Titillium Web", sans-serif;
+}
+.list-group-item ul {
+  padding: 0;
+}
+li .em2 {
+  font-size: 60px;
+  color: aliceblue;
+  display: inline;
+  height: 30px;
+  line-height: 1;
+}
+.MON {
+  font-size: 42px;
+  font-weight: 900;
+  line-height: 1;
+}
+.TEMP {
+  font-weight: 800;
+  font-size: 20px;
+  line-height: 1;
+  padding-top: 20px;
+}
+span {
+  color: white;
+}
+.horiz ul {
+  padding: 0 20px;
+}
+.btn1 {
+  margin: 18px auto;
+}
+form {
+  text-align: left;
+  margin-top: 20px;
+}
