@@ -31,33 +31,14 @@ function temp(event) {
 let tempChange = document.querySelector("h1");
 tempChange.addEventListener("click", temp);
 
-function searchCity(city) {
-  let apiKey = "c95d60a1e3adbeb286133f1ebebc2579";
-  let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(showTemperature);
-}
-
-let forms = document.querySelector("#form");
-forms.addEventListener("submit", searching);
-
-function showTemperature(response) {
-  let temperature = Math.round(response.data.main.temp);
-  let h1 = document.querySelector("h1");
-  let cities = document.querySelector("#city");
-  h1.innerHTML = `${temperature}°c`;
-  cities.innerHTML = response.data.name;
-}
-
-//currentcity
-let tempChange = document.querySelector("h1");
-tempChange.addEventListener("click", temp);
-
 //hw5final
 function searchCity(city) {
   let apiKey = "c95d60a1e3adbeb286133f1ebebc2579";
+
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
-  axios.get(apiUrl).then(showTemperature);
+  axios.get(`${apiUrl}`).then(showTemperature);
 }
+
 function cityPut(event) {
   event.preventDefault();
   let city = document.querySelector("#search-input").value;
@@ -73,13 +54,13 @@ function showTemperature(response) {
 }
 let forms = document.querySelector("#form");
 forms.addEventListener("submit", cityPut);
-//currentcity
-function showWeather(response) {
-  let temperature = Math.round(response.data.main.temp);
-  city.innerHTML = cities;
-  let cities = response.data.name;
-  let h1 = document.querySelector("h1");
 
+//currentcity
+
+function showWeather(response) {
+  let cities = document.querySelector("#city");
+  let temperature = Math.round(response.data.main.temp);
+  let h1 = document.querySelector("h1");
   let weaather = `${temperature}°C `;
   h1.innerHTML = weaather;
 }
@@ -89,7 +70,6 @@ function displayPosition(position) {
   let lon = position.coords.longitude;
 
   let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
-  axios.get(url).then(showWeather);
+  axios.get(`${url}`).then(showWeather);
 }
-
 navigator.geolocation.getCurrentPosition(displayPosition);
