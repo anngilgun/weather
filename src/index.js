@@ -61,6 +61,7 @@ forms.addEventListener("submit", cityPut);
 
 function showWeather(response) {
   let cities = document.querySelector("#city");
+  cities.innerHTML = response.data.name;
   let temperature = Math.round(response.data.main.temp);
   let h1 = document.querySelector("h1");
   let weaather = `${temperature}°C `;
