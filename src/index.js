@@ -65,6 +65,8 @@ function showWeather(response) {
   let h1 = document.querySelector("h1");
   let weaather = `${temperature}°C `;
   h1.innerHTML = weaather;
+  let description = document.querySelector("#weather-description");
+  description.innerHTML = response.data.weather[0].description;
 }
 function displayPosition(position) {
   let apiKey = "c95d60a1e3adbeb286133f1ebebc2579";
