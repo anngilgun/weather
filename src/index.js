@@ -53,6 +53,12 @@ function showTemperature(response) {
   cities.innerHTML = response.data.name;
   let description = document.querySelector("#weather-description");
   description.innerHTML = response.data.weather[0].description;
+  let iconElement = document.querySelector("#em1");
+  iconElement.setAttribute(
+    "src",
+    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+  );
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 let forms = document.querySelector("#form");
 forms.addEventListener("submit", cityPut);
@@ -74,7 +80,6 @@ function showWeather(response) {
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", response.data.weather[0].description);
-  getForecast(response.data.coord);
 }
 function displayPosition(position) {
   let apiKey = "c95d60a1e3adbeb286133f1ebebc2579";
