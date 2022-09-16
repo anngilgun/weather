@@ -68,12 +68,12 @@ function showWeather(response) {
   h1.innerHTML = weaather;
   let description = document.querySelector("#weather-description");
   description.innerHTML = response.data.weather[0].description;
-  let emojiElement = document.querySelector("#em1");
-  emojiElement.setAttribute(
+  let iconElement = document.querySelector("#em1");
+  iconElement.setAttribute(
     "src",
     `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
-  emojiElement.setAttribute("alt", response.data.weather[0].description);
+  iconElement.setAttribute("alt", response.data.weather[0].description);
 }
 function displayPosition(position) {
   let apiKey = "c95d60a1e3adbeb286133f1ebebc2579";
