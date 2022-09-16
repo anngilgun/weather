@@ -24,7 +24,7 @@ h1 {
   width: 120px;
   height: 120px;
 }
-h2 {
+#wind {
   color: white;
   font-family: "Titillium Web", sans-serif;
 
@@ -49,7 +49,7 @@ div.col-3 {
 div.col-2 {
   margin-top: 40px;
 }
-.rain {
+#humidity {
   padding-top: 74px;
 }
 li.list-group-item {
