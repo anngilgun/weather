@@ -12,6 +12,7 @@ h1 {
   margin: 20px 0 0 10px;
   width: 100px;
   height: 0px;
+  text-transform: uppercase;
 
   text-align: center;
 }
