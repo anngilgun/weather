@@ -58,6 +58,7 @@ function showTemperature(response) {
   );
   document.querySelector("#wind").innerHTML = Math.round(
     response.data.wind.speed
+  );
   let iconElement = document.querySelector("#em1");
   iconElement.setAttribute(
     "src",
