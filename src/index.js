@@ -26,7 +26,7 @@ form.addEventListener("submit", search);
 
 function temp(event) {
   event.preventDefault();
-  event.target.innerHTML = "60° F";
+  event.target.innerHTML = "${tempChange}+2";
 }
 let tempChange = document.querySelector("h1");
 tempChange.addEventListener("click", temp);
