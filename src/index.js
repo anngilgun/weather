@@ -53,10 +53,10 @@ function showTemperature(response) {
   cities.innerHTML = response.data.name;
   let description = document.querySelector("#weather-description");
   description.innerHTML = response.data.weather[0].description;
-  document.querySelector("#humidity").innerHTML = Math.round(
+  document.querySelector("#humidity").innerHTML = `Humidity: ${Math.round(
     response.data.main.humidity
-  );
-  document.querySelector("#wind").innerHTML = Math.round(
+  )}%`;
+  document.querySelector("#wind").innerHTML = ("Math.round(
     response.data.wind.speed
   );
   let iconElement = document.querySelector("#em1");
