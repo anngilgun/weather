@@ -34,9 +34,9 @@ function displayForecast(response) {
           <ul>
             <li class="em2">
               <img
-                src=""http://openweathermap.org/img/wn/${
+                src="http://openweathermap.org/img/wn/${
                   forecastDay.weather[0].icon
-                }@2x.png""
+                }@2x.png"
                 alt=""
                 width="42"
               />
