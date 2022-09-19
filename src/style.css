@@ -61,7 +61,7 @@ li.list-group-item {
   text-align: center;
   display: block;
 }
-li {
+#max {
   list-style: none;
   color: black;
   font-family: "Titillium Web", sans-serif;
@@ -87,7 +87,7 @@ li .em2 {
   line-height: 1;
   padding-top: 20px;
 }
-span {
+#min {
   color: white;
 }
 .horiz ul {
