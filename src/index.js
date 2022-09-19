@@ -17,28 +17,32 @@ monday.innerHTML = `${day}, ${time}:${min}`;
 
 //forecast
 function displayForecast(response) {
-  console.log(response.data.daily);
+  let forecast = response.data.daily;
   let forecastElement = document.querySelector("#forecast");
 
-  let days = ["Thu", "Fri", "Sat", "Sun"];
-
   let forecastHTML = `<div class="row">`;
-  days.forEach(function (day) {
+  forecast.forEach(function (forecastDay) {
     forecastHTML =
       forecastHTML +
       ` <li class="list-group-item">
           <ul>
             <li class="em2">
               <img
-                src="http://openweathermap.org/img/wn/50d@2x.png"
+                src=""http://openweathermap.org/img/wn/${
+                  forecastDay.weather[0].icon
+                }@2x.png""
                 alt=""
                 width="42"
               />
             </li>
             <li class="TEMP">
-              <span id="max">20°</span><span id="min">10°</span>
+              <span id="max">${Math.round(
+                forecastDay.temp.max
+              )}°</span><span id="min">${Math.round(
+        forecastDay.temp.min
+      )}°</span>
             </li>
-            <li class="MON">${day}</li>
+            <li class="MON">${forecastDay.dt}</li>
           </ul>
         </li>
 
