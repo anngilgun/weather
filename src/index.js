@@ -12,7 +12,10 @@ let days = [
 ];
 let day = days[now.getDay()];
 let time = now.getHours();
-monday.innerHTML = `${day}, ${time}:00`;
+let min = now.getMinutes();
+monday.innerHTML = `${day}, ${time}:${min}`;
+
+//forecast
 
 function search(event) {
   event.preventDefault();
