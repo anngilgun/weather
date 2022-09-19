@@ -27,10 +27,11 @@ function displayForecast(response) {
   let forecastElement = document.querySelector("#forecast");
 
   let forecastHTML = `<div class="row">`;
-  forecast.forEach(function (forecastDay) {
-    forecastHTML =
-      forecastHTML +
-      ` <li class="list-group-item">
+  forecast.forEach(function (forecastDay, index) {
+    if (index < 5) {
+      forecastHTML =
+        forecastHTML +
+        ` <li class="list-group-item">
           <ul>
             <li class="em2">
               <img
@@ -45,8 +46,8 @@ function displayForecast(response) {
               <span id="max">${Math.round(
                 forecastDay.temp.max
               )}°</span><span id="min">${Math.round(
-        forecastDay.temp.min
-      )}°</span>
+          forecastDay.temp.min
+        )}°</span>
             </li>
             <li class="MON">${formatDay(forecastDay.dt)}</li>
           </ul>
@@ -54,6 +55,7 @@ function displayForecast(response) {
 
       
   `;
+    }
   });
 
   forecastHTML = forecastHTML + `</div>`;
