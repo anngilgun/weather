@@ -31,7 +31,7 @@ function displayForecast(response) {
     if (index < 5) {
       forecastHTML =
         forecastHTML +
-        ` 
+        ` <ul class="list-group list-group-horizontal horiz" >
         <li class="list-group-item">
           <ul>
             <li class="em2">
@@ -53,6 +53,8 @@ function displayForecast(response) {
             <li class="MON">${formatDay(forecastDay.dt)}</li>
           </ul>
         </li>
+         </ul>
+
         
 
       
