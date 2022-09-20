@@ -125,8 +125,6 @@ function showTemperature(response) {
   iconElement.setAttribute("alt", response.data.weather[0].description);
   getForecast(response.data.coord);
 }
-let forms = document.querySelector("#form");
-forms.addEventListener("submit", cityPut);
 
 //currentcity
 
