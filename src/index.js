@@ -124,16 +124,13 @@ let forms = document.querySelector("#form");
 forms.addEventListener("submit", cityPut);
 
 //currentcity
-function currentPosition(position) {
+
+function displayPosition(position) {
   let apiKey = "c95d60a1e3adbeb286133f1ebebc2579";
   let lat = position.coords.latitude;
   let lon = position.coords.longitude;
-  let units = "metric";
-  let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=${units}&appid=${apiKey}`;
-  axios.get(url).then(showWeatherData);
-}
 
-function showPosition(event) {
-  event.preventDefault();
-  navigator.geolocation.getCurrentPosition(currentPosition);
+  let url = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&units=metric&appid=${apiKey}`;
+  axios.get(`${url}`).then(showWeather);
 }
+navigator.geolocation.getCurrentPosition(displayPosition);
