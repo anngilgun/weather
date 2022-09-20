@@ -123,23 +123,6 @@ function showTemperature(response) {
 
 //currentcity
 
-function showWeather(response) {
-  cities.innerHTML = response.data.name;
-
-  document.querySelector("#humidity").innerHTML = `Humidity: ${Math.round(
-    response.data.main.humidity
-  )}%`;
-  document.querySelector("#wind").innerHTML = `Wind: ${Math.round(
-    response.data.wind.speed
-  )}km/h`;
-
-  iconElement.setAttribute(
-    "src",
-    `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
-  );
-  iconElement.setAttribute("alt", response.data.weather[0].description);
-}
-
 function displayPosition(position) {
   let apiKey = "c95d60a1e3adbeb286133f1ebebc2579";
   let lat = position.coords.latitude;
