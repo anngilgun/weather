@@ -79,15 +79,10 @@ function search(event) {
   cities.innerHTML = `${searchInput.value}`;
 }
 
-let form = document.querySelector("#form");
-form.addEventListener("submit", search);
-
 function temp(event) {
   event.preventDefault();
   event.target.innerHTML = "60° F";
 }
-let tempChange = document.querySelector("h1");
-tempChange.addEventListener("click", temp);
 
 //hw5final
 function searchCity(city) {
