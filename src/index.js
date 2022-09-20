@@ -125,7 +125,6 @@ forms.addEventListener("submit", cityPut);
 
 //currentcity
 
-
 function displayPosition(position) {
   let apiKey = "c95d60a1e3adbeb286133f1ebebc2579";
   let lat = position.coords.latitude;
@@ -136,5 +135,5 @@ function displayPosition(position) {
 }
 function getCurrentLocation(event) {
   event.preventDefault();
-navigator.geolocation.getCurrentPosition(displayPosition);
-
+  navigator.geolocation.getCurrentPosition(displayPosition);
+}
