@@ -9,26 +9,27 @@
 h1 {
   color: white;
   font-family: "Titillium Web", sans-serif;
-  margin: 20px 0 0 10px;
+  margin: 20px 0 0 35px;
   width: 100px;
   height: 0px;
+  text-transform: uppercase;
 
   text-align: center;
 }
-.em1 {
+#em1 {
   font-size: 100px;
   text-align: center;
   margin: 0 auto;
   padding: 0 auto;
   width: 120px;
-  height: 138px;
+  height: 120px;
 }
-h2 {
+#wind {
   color: white;
   font-family: "Titillium Web", sans-serif;
-
-  width: 150px;
-  padding-top: 5px;
+  font-size: 30px;
+  width: 180px;
+  padding-top: 10px;
 }
 .today li {
   list-style: none;
@@ -38,7 +39,8 @@ h2 {
   width: 150px;
 }
 div.col-3 {
-  padding: 0 70px 0 150px;
+  padding: 0 70px 0 80px;
+  margin-bottom: 10px;
 }
 .row {
   display: block;
@@ -48,8 +50,8 @@ div.col-3 {
 div.col-2 {
   margin-top: 40px;
 }
-.rain {
-  padding-top: 74px;
+#humidity {
+  padding-top: 60px;
 }
 li.list-group-item {
   background: none;
@@ -59,7 +61,7 @@ li.list-group-item {
   text-align: center;
   display: block;
 }
-li {
+#max {
   list-style: none;
   color: black;
   font-family: "Titillium Web", sans-serif;
@@ -85,7 +87,7 @@ li .em2 {
   line-height: 1;
   padding-top: 20px;
 }
-span {
+#min {
   color: white;
 }
 .horiz ul {
@@ -98,3 +100,7 @@ form {
   text-align: left;
   margin-top: 20px;
 }
+.link {
+  margin-left: 110px;
+}
+
