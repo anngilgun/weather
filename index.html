@@ -34,57 +34,100 @@
     <div class="container">
       <div class="row">
         <div class="col-3">
-          <p class="em1">⛅</p>
+          <img src="" alt="Clear" id="em1" />
           <h1>20°C</h1>
+
           <br />
-          <h2><small>WIND: 2KM</small></h2>
+          <h2 id="wind"><small>WIND: 2KM</small></h2>
         </div>
         <div class="col-2">
           <ul class="today">
             <li id="city">LVIV,UKRAINE</li>
-            <li class="dayhour">MONDAY, 10:00</li>
-            <li>SUN</li>
-            <li class="rain">RAIN CHANCE: 0</li>
+            <li class="dayhour"></li>
+            <li id="weather-description"></li>
+            <li id="humidity">Humidity:</li>
           </ul>
         </div>
       </div>
-      <ul class="list-group list-group-horizontal horiz">
-        <li class="list-group-item">
-          <ul>
-            <li class="em2">🌧</li>
-            <li class="TEMP">20°<span>10°</span></li>
-            <li class="MON">MON</li>
-          </ul>
-        </li>
-        <li class="list-group-item">
-          <ul>
-            <li class="em2">🌩</li>
-            <li class="TEMP">23°<span>12°</span></li>
-            <li class="MON">TUE</li>
-          </ul>
-        </li>
-        <li class="list-group-item">
-          <ul>
-            <li class="em2">⛅</li>
-            <li class="TEMP">18°<span>13°</span></li>
-            <li class="MON">WED</li>
-          </ul>
-        </li>
-        <li class="list-group-item">
-          <ul>
-            <li class="em2">🌪</li>
-            <li class="TEMP">14°<span>5°</span></li>
-            <li class="MON">THU</li>
-          </ul>
-        </li>
-        <li class="list-group-item">
-          <ul>
-            <li class="em2">🌦</li>
-            <li class="TEMP">22°<span>11°</span></li>
-            <li class="MON">FRI</li>
-          </ul>
-        </li>
-      </ul>
+      <div id="forecast">
+        <ul class="list-group list-group-horizontal horiz" id="forecast">
+          <li class="list-group-item">
+            <ul>
+              <li class="em2">
+                <img
+                  src="http://openweathermap.org/img/wn/50d@2x.png"
+                  alt=""
+                  width="42"
+                />
+              </li>
+              <li class="TEMP">
+                <span id="max">20°</span><span id="min">10°</span>
+              </li>
+              <li class="MON">MON</li>
+            </ul>
+          </li>
+          <li class="list-group-item">
+            <ul>
+              <li class="em2">
+                <img
+                  src="http://openweathermap.org/img/wn/50d@2x.png"
+                  alt=""
+                  width="42"
+                />
+              </li>
+              <li class="TEMP">
+                <span id="max">20°</span><span id="min">10°</span>
+              </li>
+              <li class="MON">TUE</li>
+            </ul>
+          </li>
+          <li class="list-group-item">
+            <ul>
+              <li class="em2">
+                <img
+                  src="http://openweathermap.org/img/wn/50d@2x.png"
+                  alt=""
+                  width="42"
+                />
+              </li>
+              <li class="TEMP">
+                <span id="max">20°</span><span id="min">10°</span>
+              </li>
+              <li class="MON">WED</li>
+            </ul>
+          </li>
+          <li class="list-group-item">
+            <ul>
+              <li class="em2">
+                <img
+                  src="http://openweathermap.org/img/wn/50d@2x.png"
+                  alt=""
+                  width="42"
+                />
+              </li>
+              <li class="TEMP">
+                <span id="max">20°</span><span id="min">10°</span>
+              </li>
+              <li class="MON">THU</li>
+            </ul>
+          </li>
+          <li class="list-group-item">
+            <ul>
+              <li class="em2">
+                <img
+                  src="http://openweathermap.org/img/wn/50d@2x.png"
+                  alt=""
+                  width="42"
+                />
+              </li>
+              <li class="TEMP">
+                <span id="max">20°</span><span id="min">10°</span>
+              </li>
+              <li class="MON">FRI</li>
+            </ul>
+          </li>
+        </ul>
+      </div>
       <form id="form">
         <input
           type="text"
@@ -95,6 +138,10 @@
         />
         <input type="Submit" value="Search" />
       </form>
+    </div>
+    <div class="link">
+      <a href="https://github.com/anngilgun/weather">Open-source code</a> by
+      Anna Pliuiko
     </div>
 
     <script src="src/index.js"></script>
