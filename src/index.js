@@ -137,3 +137,4 @@ function getCurrentLocation(event) {
   event.preventDefault();
   navigator.geolocation.getCurrentPosition(displayPosition);
 }
+navigator.geolocation.getCurrentPosition(displayPosition);
