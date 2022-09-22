@@ -40,6 +40,7 @@ h1 {
   text-align: right;
   width: 150px;
 }
+
 div.col-3 {
   padding: 0 0px 0 90px;
   margin-bottom: 10px;
@@ -100,8 +101,9 @@ div.col-2 {
   margin: 18px auto;
 }
 form {
-  text-align: left;
-  margin-top: 20px;
+  margin-top: 40px;
+  margin-left: 0;
+  width: 300px;
 }
 .link {
   margin-left: 110px;
