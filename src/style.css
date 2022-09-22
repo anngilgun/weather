@@ -69,7 +69,7 @@ li.list-group-item {
 .list-group-item ul {
   padding: 0;
 }
-.weather-forecast-temperatures {
+li .em2 {
   font-size: 60px;
   color: aliceblue;
   display: inline;
@@ -81,7 +81,7 @@ li.list-group-item {
   font-weight: 900;
   line-height: 1;
 }
-.TEMP {
+.weather-forecast-temperatures {
   font-weight: 800;
   font-size: 20px;
   line-height: 1;
