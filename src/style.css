@@ -9,17 +9,18 @@
 h1 {
   color: white;
   font-family: "Titillium Web", sans-serif;
-  margin: 20px 0 0 35px;
-  width: 100px;
+  margin-left: 40px;
+  width: 90px;
   height: 0px;
   text-transform: uppercase;
 
   text-align: center;
 }
+
 #em1 {
   font-size: 100px;
   text-align: center;
-  margin: 0 auto;
+  margin-left: 30px;
   padding: 0 auto;
   width: 120px;
   height: 120px;
@@ -30,6 +31,7 @@ h1 {
   font-size: 30px;
   width: 180px;
   padding-top: 10px;
+  margin: 0 auto;
 }
 .today li {
   list-style: none;
@@ -37,9 +39,15 @@ h1 {
   font-family: "Titillium Web", sans-serif;
   text-align: right;
   width: 150px;
+  border: none;
+  margin-left: 80px;
 }
+.today ul {
+  border: 0px;
+}
+
 div.col-3 {
-  padding: 0 70px 0 80px;
+  padding: 0 0px 0 200px;
   margin-bottom: 10px;
 }
 .row {
@@ -47,11 +55,11 @@ div.col-3 {
   margin: 0 auto;
   align-items: center;
 }
-div.col-2 {
-  margin-top: 40px;
+#city {
+  margin-top: 50px;
 }
 #humidity {
-  padding-top: 60px;
+  padding-top: 50px;
 }
 li.list-group-item {
   background: none;
@@ -61,7 +69,7 @@ li.list-group-item {
   text-align: center;
   display: block;
 }
-#max {
+.max {
   list-style: none;
   color: black;
   font-family: "Titillium Web", sans-serif;
@@ -76,31 +84,32 @@ li .em2 {
   height: 30px;
   line-height: 1;
 }
-.MON {
+.weather-forecast-date {
   font-size: 42px;
   font-weight: 900;
   line-height: 1;
 }
-.TEMP {
+.weather-forecast-temperatures {
   font-weight: 800;
   font-size: 20px;
   line-height: 1;
   padding-top: 20px;
 }
-#min {
+.min {
   color: white;
 }
-.horiz ul {
-  padding: 0 20px;
+div.col-2 {
+  padding: 0;
+  width: 150px;
 }
 .btn1 {
   margin: 18px auto;
 }
 form {
-  text-align: left;
-  margin-top: 20px;
+  margin-top: 40px;
+  margin-left: 0;
+  width: 300px;
 }
 .link {
   margin-left: 110px;
 }
-
