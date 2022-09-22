@@ -69,7 +69,7 @@ li.list-group-item {
 .list-group-item ul {
   padding: 0;
 }
-li .em2 {
+.weather-forecast-temperatures {
   font-size: 60px;
   color: aliceblue;
   display: inline;
