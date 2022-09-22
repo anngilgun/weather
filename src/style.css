@@ -9,13 +9,14 @@
 h1 {
   color: white;
   font-family: "Titillium Web", sans-serif;
-  margin: 20px 0 0 35px;
-  width: 100px;
+  margin: 0 auto;
+  width: 90px;
   height: 0px;
   text-transform: uppercase;
 
   text-align: center;
 }
+
 #em1 {
   font-size: 100px;
   text-align: center;
@@ -30,6 +31,7 @@ h1 {
   font-size: 30px;
   width: 180px;
   padding-top: 10px;
+  margin: 0 auto;
 }
 .today li {
   list-style: none;
@@ -39,7 +41,7 @@ h1 {
   width: 150px;
 }
 div.col-3 {
-  padding: 0 70px 0 80px;
+  padding: 0 0px 0 90px;
   margin-bottom: 10px;
 }
 .row {
@@ -90,8 +92,9 @@ li .em2 {
 .min {
   color: white;
 }
-.horiz ul {
-  padding: 0 20px;
+div.col-2 {
+  padding: 0;
+  width: 150px;
 }
 .btn1 {
   margin: 18px auto;
